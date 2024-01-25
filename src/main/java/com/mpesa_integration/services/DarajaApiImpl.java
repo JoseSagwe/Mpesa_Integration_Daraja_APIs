@@ -36,6 +36,7 @@ public class DarajaApiImpl implements DarajaApi {
         String encodedCredentials = HelperUtility.toBase64String(String.format("%s:%s", mpesaConfiguration.getConsumerKey(),
                 mpesaConfiguration.getConsumerSecret()));
 
+
         Request request = new Request.Builder()
                 .url(String.format("%s?grant_type=%s", mpesaConfiguration.getOauthEndpoint(), mpesaConfiguration.getGrantType()))
                 .get()
