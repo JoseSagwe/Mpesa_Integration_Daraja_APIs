@@ -1,5 +1,6 @@
 package com.mpesa_integration.controllers;
 
+
 import com.mpesa_integration.dtosResponse.AccessTokenResponse;
 import com.mpesa_integration.services.DarajaApi;
 import org.springframework.http.ResponseEntity;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("mpesa")
+
 public class MpesaController {
 
     private final DarajaApi darajaApi;
