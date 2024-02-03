@@ -36,7 +36,7 @@ public class DarajaApiImpl implements DarajaApi {
     @Override
     public AccessTokenResponse getAccessToken() {
 
-        // get the Base64 rep of consumerKey + ":" + consumerSecret === helper class
+        // get the Base64 rep of consumerKey + ":" + consumerSecret
         String encodedCredentials = HelperUtility.toBase64String(String.format("%s:%s", mpesaConfiguration.getConsumerKey(),
                 mpesaConfiguration.getConsumerSecret()));
 

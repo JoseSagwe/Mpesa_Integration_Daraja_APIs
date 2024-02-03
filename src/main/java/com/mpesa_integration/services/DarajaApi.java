@@ -13,8 +13,11 @@ public interface DarajaApi {
 
         AccessTokenResponse getAccessToken();
 
-    RegisterUrlResponse registerUrl();
+//    RegisterUrlResponse registerUrl();
+//
+//    SimulateTransactionResponse simulateC2BTransaction(SimulateTransactionRequest simulateTransactionRequest);
 
-    SimulateTransactionResponse simulateC2BTransaction(SimulateTransactionRequest simulateTransactionRequest);
+
+
 
     }
