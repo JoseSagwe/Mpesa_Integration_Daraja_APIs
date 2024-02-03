@@ -6,15 +6,12 @@ import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
 
-
 /**
  * Contains a set of helper functions.
  */
 
-
 @Slf4j
 public class HelperUtility {
-
 
     /**
      * @param value the value to be converted to a base64 string

@@ -13,6 +13,7 @@ public class MpesaIntegrationApplication {
 		SpringApplication.run(MpesaIntegrationApplication.class, args);
 	}
 
+	//Creating the bean to inject it all over the application without creating an instance every time
 	@Bean
 	public OkHttpClient getOkHttpClient() {
 		return new OkHttpClient();

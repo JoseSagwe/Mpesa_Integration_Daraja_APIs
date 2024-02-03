@@ -36,9 +36,10 @@ public class DarajaApiImpl implements DarajaApi {
     @Override
     public AccessTokenResponse getAccessToken() {
 
-        // get the Base64 rep of consumerKey + ":" + consumerSecret
+        // get the Base64 rep of consumerKey + ":" + consumerSecret === helper class
         String encodedCredentials = HelperUtility.toBase64String(String.format("%s:%s", mpesaConfiguration.getConsumerKey(),
                 mpesaConfiguration.getConsumerSecret()));
+
 
 
         Request request = new Request.Builder()
@@ -47,6 +48,7 @@ public class DarajaApiImpl implements DarajaApi {
                 .addHeader(AUTHORIZATION_HEADER_STRING, String.format("%s %s", BASIC_AUTH_STRING, encodedCredentials))
                 .addHeader(CACHE_CONTROL_HEADER, CACHE_CONTROL_HEADER_VALUE)
                 .build();
+
 
         try {
             Response response = okHttpClient.newCall(request).execute();
