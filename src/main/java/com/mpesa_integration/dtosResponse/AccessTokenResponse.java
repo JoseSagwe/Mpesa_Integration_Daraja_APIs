@@ -8,11 +8,14 @@ import lombok.SneakyThrows;
 @Data
 public class AccessTokenResponse {
 
+
     @JsonProperty("access_token")
     private String accessToken;
 
+
     @JsonProperty("expires_in")
     private String expiresIn;
+
 
     @SneakyThrows
     @Override
