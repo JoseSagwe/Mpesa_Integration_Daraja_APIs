@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("mpesa")
 
 public class MpesaController {
-
     private final DarajaApi darajaApi;
 
     public MpesaController(DarajaApi darajaApi) {
