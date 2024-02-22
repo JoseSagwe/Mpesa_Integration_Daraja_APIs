@@ -1,6 +1,5 @@
 package com.mpesa_integration.controllers;
 
-
 import com.mpesa_integration.dtosResponse.AccessTokenResponse;
 import com.mpesa_integration.services.DarajaApi;
 import org.springframework.http.ResponseEntity;
